@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: absolute;
+    /* margin: auto;
+    margin-top: 10%; */
+    top: 20%;
+    left: 25%;
+    background-color: aquamarine;
+    border-radius: 30px;
+    height: 410px;
+    width: 50%;
+}
+.main .panel{
+    position: relative;
+    width: 95%;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    top: 20px;
+    background-color: rgb(250, 18, 18);
+}
+.main .panel #panel{
+    padding: 20px;
+}
+.keys{
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+}
+.keys .num{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 58%;
+    padding: 10px;
+}
+.keys .op{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 38%;
+    padding: 10px;
+}
+.keys .btn{
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 30px;
+    color: #000;
+    /* background-color: brown; */
+}
+.keys #one{
+    background: url("/icons/1.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #two{
+    background: url("/icons/2.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #three{
+    background: url("/icons/3.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #four{
+    background: url("/icons/4.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #five{
+    background: url("/icons/5.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #six{
+    background: url("/icons/6.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #seven{
+    background: url("/icons/7.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #eight{
+    background: url("/icons/8.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #nine{
+    background: url("/icons/9.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #zero{
+    background: url("/icons/0.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #plus{
+    background: url("/icons/plus.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #minus{
+    background: url("/icons/minus.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #mul{
+    background: url("/icons/multiply.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #div{
+    background: url("/icons/divide.png") no-repeat;
+    background-size: 70px;
+    background-position: center;
+}
+.keys #back{
+    background: url("/icons/arrow.png") no-repeat;
+    background-size: 45px;
+    background-position: center;
+}
+.keys #enter{
+    background: url("/icons/enter.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.keys #dot{
+    background: url("/icons/dot.png") no-repeat;
+    background-size: 10px;
+    background-position:bottom;
+}
+.keys #ce{
+    background: url("/icons/clear.png") no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+@media only screen and (max-width: 800px){
+    .main{
+        height: 620px;
+    }
+    .keys{
+        flex-direction: column-reverse;
+    }
+    .keys .num{
+        width: 100%;
+    }
+    .keys .op{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+}
